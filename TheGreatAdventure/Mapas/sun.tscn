@@ -20,7 +20,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "sol"
-length = 1.1
+length = 1.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -29,7 +29,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 0.9, 1.1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 2, 3, 4, 5 ]
