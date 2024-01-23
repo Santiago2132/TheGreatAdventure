@@ -490,7 +490,6 @@ margin_top = -96.0
 margin_right = -97.0
 margin_bottom = -82.0
 text = ":"
-percent_visible = -1.0
 max_lines_visible = 0
 
 [node name="Contador" type="Label" parent="CanvasLayer"]
