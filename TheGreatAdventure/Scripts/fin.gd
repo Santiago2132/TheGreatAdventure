@@ -5,7 +5,7 @@ const maxSpeed = 100
 
 const jumpHeight = -300
 const up = Vector2(0,-1)
-const gravity = 15
+const gravity = 14
 
 onready var sprite = $Sprite
 onready var animation = $AnimationPlayer

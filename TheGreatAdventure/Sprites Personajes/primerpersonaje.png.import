@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coin_silver.png-c016044f17e69479e01cd98e871a17ff.stex"
+path="res://.import/primerpersonaje.png-69e4261c72b5f9b1bc0b1fa94b3a9822.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/Objects/coin_silver.png"
-dest_files=[ "res://.import/coin_silver.png-c016044f17e69479e01cd98e871a17ff.stex" ]
+source_file="res://Sprites Personajes/primerpersonaje.png"
+dest_files=[ "res://.import/primerpersonaje.png-69e4261c72b5f9b1bc0b1fa94b3a9822.stex" ]
 
 [params]
 
