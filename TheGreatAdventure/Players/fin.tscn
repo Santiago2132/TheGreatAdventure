@@ -1,7 +1,40 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Sprites Personajes/FinnSprite.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/fin.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=6]
+resource_name = "Atacar"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 23, 24, 25, 26, 27, 24, 23 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Morir"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 1.9, 2.2, 2.4, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 16, 17, 18, 19, 20, 21, 22 ]
+}
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -66,7 +99,10 @@ texture = ExtResource( 1 )
 hframes = 28
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "normal"
 playback_speed = 2.0
+anims/Atacar = SubResource( 6 )
+anims/Morir = SubResource( 7 )
 anims/RESET = SubResource( 1 )
 anims/caminar = SubResource( 2 )
 anims/normal = SubResource( 3 )
